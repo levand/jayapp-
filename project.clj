@@ -9,7 +9,7 @@
                  [ch.qos.logback/logback-classic "1.1.3"]
                  [hiccup "1.0.5"]
                  [org.webjars/bootstrap "3.3.7-1"]
-                 ]
+                 [rum "0.10.8"]]
   :source-paths ["src" "config"]
   :profiles {:dev {:source-paths ["src" "dev" "config"]}}
   :repositories [["arachne-dev"
