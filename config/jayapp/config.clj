@@ -60,7 +60,8 @@
 (assets/pipeline [::src-dir ::cljs-build])
 
 (a/id ::figwheel (fig/server cljs-opts :port 8888
-                                       :css? true))
+                                       :css? true
+                                       :on-jsload 'jayapp.client/onload))
 
 (assets/pipeline
   [::src-dir ::figwheel #{:src}]

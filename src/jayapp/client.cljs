@@ -8,12 +8,25 @@
 (rum/defc page < rum/static
   []
   [:div
-   [:h1 "Save the trees!"]
+   [:nav.navbar.navbar-inverse
+    [:div.container-fluid
+     [:div.navbar-header
+      [:button {:type "button"}
+       [:span "Hello!"]]]]]
+   [:h1 "Save the bees!"]
+
    [:img {:src "img/trees.jpg"}]
    (button "Save them!")])
 
-(defn ^:export main
-  []
+(defn render []
   (rum/mount
     (page)
     (.getElementById js/document "app")))
+
+(defn ^:export main
+  []
+  (render))
+
+(defn onload
+  []
+  (render))
