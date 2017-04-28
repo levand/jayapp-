@@ -1,3 +1,5 @@
 [{:arachne/name :jayapp/application
   :arachne/inits [jayapp.config]
-  :arachne/dependencies [:org.arachne-framework/arachne-pedestal]}]
+  :arachne/dependencies [:org.arachne-framework/arachne-pedestal
+                         :org.arachne-framework/pedestal-assets
+                         :org.arachne-framework/arachne-sass]}]
