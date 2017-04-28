@@ -1,24 +1,24 @@
 (ns jayapp.web
   (:require [hiccup.core :as h]))
 
-(defn head
-  "Return Hiccup data for the application's HTML head"
-  []
-  [:head
-   [:link {:href "css/app.css" :rel "stylesheet"}]])
-
-(defn- hello-body
+(defn- index-body
   []
   (h/html
     [:html
-     (head)
+     [:head
+      [:link {:href "bootstrap/3.3.7-1/css/bootstrap.css" :rel "stylesheet"}]
+      [:link {:href "css/app.css" :rel "stylesheet"}]]
      [:body
-      [:h1 "Think of the trees!"]
-      [:img {:src "img/trees.jpg"}]]]))
+      [:nav.navbar.navbar-inverse
+       [:button.btn.btn-default.navbar-btn "Sample Button"]
+       [:button.btn.btn-default.navbar-btn "Another Button"]]
+      [:img {:src "img/trees.jpg"}]]])
 
-(defn hello
+  )
+
+(defn index
   [req]
   {:status 200
    :headers {"Content-Type" "text/html"}
-   :body (hello-body)})
+   :body (index-body)})
 

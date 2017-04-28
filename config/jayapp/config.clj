@@ -15,7 +15,7 @@
 
     (a/id ::asset-interceptor (passets/interceptor :index? false))
 
-    (http/endpoint :get "/" (http/handler 'jayapp.web/hello))
+    (http/endpoint :get "/" (http/handler 'jayapp.web/index))
 
     ))
 
@@ -35,6 +35,9 @@
 (assets/pipeline [::scss-dir ::scss-build]
                  [::scss-build ::asset-interceptor])
 
+;; Boostrap Assets
+(a/id ::webjars (assets/input-dir "META-INF/resources/webjars" :classpath? true))
+(assets/pipeline [::webjars ::asset-interceptor])
 
 
 

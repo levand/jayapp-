@@ -6,7 +6,9 @@
                  [org.arachne-framework/arachne-sass "0.2.0-master-0024-51d4bce"]
                  [datascript "0.16.1"]
                  [ch.qos.logback/logback-classic "1.1.3"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [org.webjars/bootstrap "3.3.7-1"]
+                 ]
   :source-paths ["src" "config"]
   :profiles {:dev {:source-paths ["src" "dev" "config"]}}
   :repositories [["arachne-dev"
