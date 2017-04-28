@@ -22,3 +22,21 @@
    :headers {"Content-Type" "text/html"}
    :body (index-body)})
 
+
+(defn- app-body []
+  (h/html
+    [:html
+     [:head
+      [:link {:href "bootstrap/3.3.7-1/css/bootstrap.css" :rel "stylesheet"}]
+      [:link {:href "css/app.css" :rel "stylesheet"}]]
+     [:body
+      [:div#app]
+      [:script {:type "text/javascript" :src "js/app.js"}]
+      [:script {:type "text/javascript"} "jayapp.client.main();"]]]))
+
+(defn app
+  [req]
+  {:status 200
+   :headers {"Content-Type" "text/html"}
+   :body (app-body)})
+

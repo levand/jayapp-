@@ -2,4 +2,6 @@
   :arachne/inits [jayapp.config]
   :arachne/dependencies [:org.arachne-framework/arachne-pedestal
                          :org.arachne-framework/pedestal-assets
-                         :org.arachne-framework/arachne-sass]}]
+                         :org.arachne-framework/arachne-sass
+                         :org.arachne-framework/arachne-figwheel
+                         ]}]

@@ -4,6 +4,7 @@
                  [org.arachne-framework/arachne-pedestal "0.2.0-master-0061-e16dc3d"]
                  [org.arachne-framework/pedestal-assets "0.2.0-master-0014-8fd438f"]
                  [org.arachne-framework/arachne-sass "0.2.0-master-0024-51d4bce"]
+                 [org.arachne-framework/arachne-figwheel "0.2.0-master-0025-56f212b"]
                  [datascript "0.16.1"]
                  [ch.qos.logback/logback-classic "1.1.3"]
                  [hiccup "1.0.5"]
