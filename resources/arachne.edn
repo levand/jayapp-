@@ -1,0 +1,3 @@
+[{:arachne/name :jayapp/application
+  :arachne/inits [jayapp.config]
+  :arachne/dependencies [:org.arachne-framework/arachne-pedestal]}]
